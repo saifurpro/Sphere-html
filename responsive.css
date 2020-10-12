@@ -1,0 +1,130 @@
+/*	Medium Layout: 1280px	*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	/* css */
+
+}
+
+
+
+/*		Tablet Layout: 768px.       */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.main-menu {
+		padding-right: 0;
+	}
+}
+
+
+
+
+/*		Tablet and Mobile Layout         */
+@media only screen and (max-width: 991px) {
+	.header::after {
+		display: none;
+	}
+	.mobile-image {
+		display: block;
+		margin-top: 15px;
+	}
+
+	.single-welcome-slide::after {
+		display: none;
+	}
+
+	.more-snapshots {
+		margin-bottom: 15px;
+	}
+
+	.footer-top-carousel .owl-nav div {
+		right: 30px;
+		top: -40px;
+		left: auto;
+		font-size: 40px;
+	}
+
+	.footer-top-carousel .owl-nav div.owl-next {
+		right: 0;
+	}
+
+	.subscribe-form input {
+		margin: 10px 0;
+	}
+
+	.footer-area {
+		text-align: center;
+	}
+
+	.footer-right {
+		text-align: center !important;
+	}
+
+	.footer-menu li a {
+		padding: 10px;
+	}
+}
+
+
+/*		Mobile Layout: 320px.         */
+
+@media only screen and (max-width: 767px) {
+
+	
+
+	.logo {
+		text-align: center;
+	}
+
+	.main-menu {
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.main-menu li a {
+		padding: 10px;
+	}
+
+	.header-right {
+		text-align: center;
+	}
+
+	.single-welcome-slide::after {
+		width: 100%;
+		clip-path: none;
+		shape-outside: none;
+	}
+
+	.subscribe-box {
+		padding: 20px;
+	}
+
+
+
+
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.        */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* css */
+
+}
+
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+	/* css */
+
+}

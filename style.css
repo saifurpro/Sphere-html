@@ -1,0 +1,612 @@
+/*=================================
+Author: Md Saifur Rahman
+Updated: 12 October, 2020
+Notes: Hand Coded by https://fiverr.com/saifurpro
+===================================*/
+
+/*------Start Base CSS------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.fix:before,
+.fix:after {
+  content: '';
+  display: table;
+}
+
+.fix:after {
+  clear: both;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+/*------End Base CSS------*/
+
+/* ----- Header CSS Start ----- */
+.header {
+  background-color: #ba232a;
+  position: relative;
+  z-index: 1;
+}
+
+.half-header-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: url("assets/img/h-b.png") no-repeat scroll 0 0 / cover;
+  z-index: -1;
+}
+
+.logo a {
+  display: inline-block;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: 'Fira Sans Condensed',
+    sans-serif;
+  font-weight: 700;
+}
+
+.logo img {
+  max-width: 115px;
+}
+
+.main-menu {
+  padding-right: 60px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 20px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.search input {
+  border: none;
+  background: rgba(255, 255, 255, 0.30);
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 20px;
+  width: 80%;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+.search i.fa,
+.language i.fa {
+  color: #fff;
+  font-size: 25px;
+  width: 18%;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.search,
+.language {
+  display: inline-block;
+}
+
+.header-right {
+  padding: 10px 0;
+}
+
+/* ----- Header CSS End ----- */
+
+/* ----- Slider CSS Start */
+.welcome-slider {
+  background-color: #d2d2d3;
+}
+
+.single-welcome-slide {
+  position: relative;
+  z-index: 1;
+}
+
+.single-welcome-slide::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #b8babb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(111% at 0%);
+  z-index: -1;
+}
+
+.single-welcome-slide.slide-bg1::after {
+  background-image: url("assets/img/slide-item-1.jpg");
+}
+
+.single-welcome-slide.slide-bg2::after {
+  background-image: url("assets/img/slide-item-2.jpg");
+}
+
+.welcome-slider-text {
+  padding: 30px 0;
+}
+
+span.green-bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: #008080;
+}
+
+.welcome-slider-text span.green-bar,
+.welcome-slider-text a.date {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.welcome-slider-text h1 {
+  color: #95272d;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.welcome-slider-text a.read-more {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.welcome-slider-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.welcome-slider-text li {
+  display: block;
+}
+
+.welcome-slider-text li a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.welcome-slider-text li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+.welcome-slider .owl-dots div {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+.welcome-slider .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 200px;
+  margin-left: -100px;
+}
+.welcome-slider .owl-dots div.active {
+  background-color: #fff;
+}
+/* ----- Slider CSS End */
+
+
+/* ----- Blog Post CSS Start ----- */
+.snapshots h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #95272d;
+  font-weight: 800;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin-bottom: 0px;
+}
+
+.snapshots {
+  color: #95272d;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.single-blog-post img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.blog-meta a.date,
+a.date {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.share-post {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #808184;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.blog-meta {
+  position: relative;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+.single-blog-post h2 {
+  color: #008080;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.single-blog-post a.read-more,
+.single-blog-post a.read-more i.fa,
+a.read-more {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.single-blog-post a.read-more {
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.single-blog-post {
+  border-bottom: 1px solid #b3b3b3;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.more-snapshots a,
+.more-snapshots a i.fa {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.more-snapshots {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 15px;
+}
+
+/* ----- Blog Post CSS End ----- */
+
+/* ----- Sidebar CSS Start ----- */
+.sidebar-widget {
+  background-color: #d2d2d3;
+  padding: 0 30px;
+  border-top: 15px solid #008080;
+}
+
+.news-bites h2 {
+  font-size: 50px;
+  color: #008080;
+  font-weight: 800;
+}
+
+.news-bites h3 {
+  color: #9a272d;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.news-bites img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.news-bites {
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+}
+
+.single-sidebar-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+
+.single-sidebar-text a.date {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.single-sidebar-text h4 {
+  font-size: 16px;
+  color: #95272d;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.single-sidebar img {
+  float: left;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.single-sidebar {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* ----- Sidebar CSS End ----- */
+
+/* ----- Subscribe CSS Start ----- */
+.subscribe-box {
+  background-color: #94272c;
+  padding: 20px 100px;
+  color: #fff;
+}
+
+.subscribe-box h2 {
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-box input[type=checkbox],
+.subscribe-box .terms-condition {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.terms-condition a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.subscribe-form input {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 6px 20px;
+  color: #000;
+}
+
+.subscribe-form input::placeholder {
+  color: #000;
+}
+
+.subscribe-form input[type=submit] {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+/* ----- Subscribe CSS End ----- */
+
+/* ----- Footer Start */
+.footer-top-area {
+  background-color: #cdcabb;
+}
+
+.footer-top-title h2 {
+  color: #008080;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.single-footer-top-item h3 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.single-footer-top-item .read-more {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+a.read-more:hover {
+  color: #ba232a;
+}
+
+.single-footer-top-item img {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.footer-top-carousel .owl-nav div {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: -15px;
+  font-size: 80px;
+  color: #fff;
+}
+
+.footer-top-carousel .owl-nav div.owl-next {
+  left: auto;
+  right: -50px;
+}
+
+.footer-area {
+  background-color: #808184;
+  padding: 10px 0;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu li {
+  display: inline-block;
+}
+
+.footer-menu li a {
+  display: block;
+  font-family: 'Fira Sans Condensed',
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 10px 15px;
+}
+
+.footer-menu li:first-child a {
+  padding-left: 0;
+}
+
+.footer-menu li a::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 12px;
+  width: 1px;
+  height: 15px;
+  background: #fff;
+
+}
+
+.footer-menu li:last-child a::after {
+  display: none;
+}
+
+.footer-menu li a:hover {
+  color: #ba232a;
+}
+
+.footer-left-text {
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer-left-text p {
+  margin-bottom: 0px;
+}
+
+.footer-right {
+  padding: 24px 0;
+}
+
+/* ----- Footer End */
+.mobile-image {
+  display: none;
+}
