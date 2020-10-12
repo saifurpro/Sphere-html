@@ -1,7 +1,10 @@
 (function($){
 	"use strict";
 	
-	jQuery(document).ready(function($){
+    jQuery(document).ready(function ($) {
+        var $main_menu = $('.main-menu');
+        $main_menu.slicknav();
+
 		$('.welcome-slider').owlCarousel({
             items: 1,
             loop: true,

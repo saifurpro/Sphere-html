@@ -610,3 +610,29 @@ a.read-more:hover {
 .mobile-image {
   display: none;
 }
+.slicknav_menu {
+  display: none;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 115px;
+  z-index: 9;
+  width: 200px;
+  margin-left: -150px;
+}
+.slicknav_nav {
+  background: #fff;
+}
+
+.slicknav_nav li a {
+  color: #000;
+}
+
+.slicknav_nav li a:hover {
+  background-color: transparent;
+  color: #ba232a;
+}
+
+.slicknav_nav ul {
+  margin-left: 0;
+}

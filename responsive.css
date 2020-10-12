@@ -22,6 +22,7 @@
 	.header::after {
 		display: none;
 	}
+
 	.mobile-image {
 		display: block;
 		margin-top: 15px;
@@ -67,8 +68,16 @@
 /*		Mobile Layout: 320px.         */
 
 @media only screen and (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+.header {
+	padding-bottom: 50px;
+}
+	.main-menu {
+		display: none;
+	}
 
-	
 
 	.logo {
 		text-align: center;
