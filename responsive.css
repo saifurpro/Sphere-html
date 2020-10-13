@@ -12,6 +12,18 @@
 	.main-menu {
 		padding-right: 0;
 	}
+	.header .col-lg-2 {
+		width: 25%;
+	}
+
+	.header .col-lg-6 {
+		width: 75%;
+	}
+
+	.header .col-lg-4 {
+		width: 50%;
+		margin-left: 50%;
+	}
 }
 
 
