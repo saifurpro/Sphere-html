@@ -1,3 +1,10 @@
+/*	Large Layout: 1280px	*/
+@media only screen and (min-width: 1920px) {
+	.header::after {
+		width: 58%;
+	}
+}
+
 /*	Medium Layout: 1280px	*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	/* css */
@@ -12,6 +19,7 @@
 	.main-menu {
 		padding-right: 0;
 	}
+
 	.header .col-lg-2 {
 		width: 25%;
 	}
@@ -83,9 +91,11 @@
 	.slicknav_menu {
 		display: block;
 	}
-.header {
-	padding-bottom: 50px;
-}
+
+	.header {
+		padding-bottom: 50px;
+	}
+
 	.main-menu {
 		display: none;
 	}
