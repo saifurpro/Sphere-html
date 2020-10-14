@@ -1,4 +1,8 @@
-
+@media only screen and (min-width: 1920px){
+	.header::after {
+		width: 60.2%;
+	}
+}
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {
 	.header::after {
 		width: 58%;
@@ -10,13 +14,15 @@
 		width: 58.5%;
 	}
 }
+
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
 	.header::after {
 		width: 59.8%;
 	}
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-	
+
 	.header .col-lg-2 {
 		width: 25%;
 		max-width: 25%;
@@ -35,9 +41,11 @@
 		max-width: 50%;
 		flex: none;
 	}
+
 	.main-menu {
 		padding-right: 0;
 	}
+
 	.header::after {
 		display: none;
 	}
@@ -50,6 +58,7 @@
 	.single-welcome-slide::after {
 		display: none;
 	}
+
 	.welcome-slider .offset-lg-8 {
 		margin-left: 0;
 		width: 100%;
@@ -172,6 +181,7 @@
 	.footer-menu li a {
 		padding: 10px;
 	}
+
 	.welcome-slider .offset-lg-8 {
 		margin-left: 0;
 		width: 100%;
@@ -257,6 +267,9 @@
 		padding: 20px;
 	}
 
+	.search {
+		width: 80%;
+	}
 
 
 
