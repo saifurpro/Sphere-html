@@ -1,25 +1,23 @@
 @media only screen and (min-width: 1920px){
-	.header::after {
-		width: 57.8%;
-	}
+	
 }
 @media only screen and (min-width: 1681px) and (max-width: 1919px) {
-	.header::after {
-		width: 58%;
-	}
+	
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1680px) {
-	.header::after {
-		width: 58.5%;
-	}
+	
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+@media only screen and (min-width: 1183px) and (max-width: 1200px) {
 	.header::after {
-		width: 59.8%;
+		background-position: 56% 0;
 	}
 }
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
 
