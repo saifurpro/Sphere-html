@@ -3,7 +3,7 @@
 		width: 60.2%;
 	}
 }
-@media only screen and (min-width: 1681px) and (max-width: 1920px) {
+@media only screen and (min-width: 1681px) and (max-width: 1919px) {
 	.header::after {
 		width: 58%;
 	}
