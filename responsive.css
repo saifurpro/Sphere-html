@@ -1,20 +1,24 @@
 @media only screen and (min-width: 1920px){
-	
+	.header::after {
+		background-position: 64% 0;
+	}
 }
-@media only screen and (min-width: 1681px) and (max-width: 1919px) {
-	
+@media only screen and (min-width: 1680px) and (max-width: 1919px) {
+	.header::after {
+		background-position: 59.5% 0;
+	}
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 1680px) {
-	
+@media only screen and (min-width: 1600px) and (max-width: 1679px) {
+	.header::after {
+		background-position: 59% 0;
+	}
 }
+
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
-	
-}
-@media only screen and (min-width: 1183px) and (max-width: 1200px) {
 	.header::after {
-		background-position: 56% 0;
+		background-position: 57.5% 0;
 	}
 }
 
